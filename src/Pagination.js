@@ -26,6 +26,9 @@ function Pagination() {
 
 
     const onScroll = (e) => {
+        console.log("window.innerheight",window.innerHeight)
+         console.log(" window.scrollY", window.scrollY)
+         console.log(" document.body.offsetHeight", window.scrollY)
         if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
             setBottom(true)
         }
